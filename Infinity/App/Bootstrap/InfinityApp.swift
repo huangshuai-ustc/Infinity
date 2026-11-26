@@ -2,11 +2,11 @@ import SwiftUI
 
 @main
 struct InfinityApp: App {
-    @StateObject private var petStore = DesktopPetStore.shared
+    @StateObject private var reminderStore = ReminderStore.shared
 
     var body: some Scene {
         WindowGroup {
-            RootView(store: petStore)
+            RootView(reminderStore: reminderStore)
         }
     }
 }

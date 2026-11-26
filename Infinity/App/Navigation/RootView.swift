@@ -1,11 +1,17 @@
 import SwiftUI
 
 struct RootView: View {
-    @ObservedObject var store: DesktopPetStore
+    @ObservedObject var reminderStore: ReminderStore
+#if os(iOS)
+    @ObservedObject private var overlay = DesktopPetOverlayController.shared
+#endif
 
     var body: some View {
         NavigationStack {
-            DesktopPetView(store: store)
+            ReminderListView()
         }
+#if os(iOS)
+        .onAppear { overlay.setShown(true) }
+#endif
     }
 }
