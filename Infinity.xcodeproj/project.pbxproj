@@ -6,7 +6,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A10000000000000000000001 /* InfinityWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* InfinityWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A10000000000000000000001 /* InfinityWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* InfinityWidgetExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A30000000000000000000003 = {isa = PBXTargetDependency; target = A60000000000000000000002 /* InfinityWidgetExtension */; targetProxy = A30000000000000000000001 /* PBXContainerItemProxy */; };
+		A30000000000000000000003 = {isa = PBXTargetDependency; platformFilter = ios; target = A60000000000000000000002 /* InfinityWidgetExtension */; targetProxy = A30000000000000000000001 /* PBXContainerItemProxy */; };
 		A30000000000000000000004 = {isa = PBXTargetDependency; target = A60000000000000000000001 /* Infinity */; targetProxy = A30000000000000000000002 /* PBXContainerItemProxy */; };
 /* End PBXTargetDependency section */
 
