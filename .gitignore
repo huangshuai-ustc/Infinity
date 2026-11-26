@@ -17,6 +17,7 @@ Config/Signing.local.xcconfig
 .vscode/
 *.swp
 *.swo
+install.sh
 
 # Local signing and provisioning material
 *.mobileprovision
