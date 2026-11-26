@@ -6,22 +6,23 @@ struct ReminderListView: View {
     @State private var isPresentingEditor = false
 
     var body: some View {
-        List {
+        Group {
             if store.reminders.isEmpty {
-                ContentUnavailableView("没有提醒", systemImage: "checklist", description: Text("添加一个时间和内容，Infinity 会按时提醒你。"))
-                    .listRowBackground(Color.clear)
+                Color.clear
+                    .ignoresSafeArea()
             } else {
-                ForEach(store.reminders) { reminder in
-                    ReminderRow(reminder: reminder) {
-                        store.toggle(reminder)
-                    } onDelete: {
-                        store.remove(reminder)
+                List {
+                    ForEach(store.reminders) { reminder in
+                        ReminderRow(reminder: reminder) {
+                            store.toggle(reminder)
+                        } onDelete: {
+                            store.remove(reminder)
+                        }
                     }
                 }
+                .listStyle(.insetGrouped)
             }
         }
-        .listStyle(.insetGrouped)
-        .navigationTitle("提醒事项")
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
