@@ -7,6 +7,9 @@
 
 /* Begin PBXBuildFile section */
 		A10000000000000000000001 /* InfinityWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* InfinityWidgetExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A10000000000000000000002 /* DesktopPetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* DesktopPetState.swift */; };
+		A10000000000000000000003 /* DesktopPetCatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* DesktopPetCatView.swift */; };
+		A10000000000000000000004 /* DesktopPetPixelSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* DesktopPetPixelSprite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +26,9 @@
 		A20000000000000000000002 /* InfinityWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = wrapper.app-extension; includeInIndex = 0; path = InfinityWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20000000000000000000003 /* InfinityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfinityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20000000000000000000004 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		A20000000000000000000005 /* DesktopPetState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infinity/Features/DesktopPet/Domain/DesktopPetState.swift; sourceTree = SOURCE_ROOT; };
+		A20000000000000000000006 /* DesktopPetCatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infinity/Features/DesktopPet/Presentation/DesktopPetCatView.swift; sourceTree = SOURCE_ROOT; };
+		A20000000000000000000007 /* DesktopPetPixelSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infinity/Features/DesktopPet/Presentation/DesktopPetPixelSprite.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -44,7 +50,7 @@
 
 /* Begin PBXGroup section */
 		A80000000000000000000001 = {isa = PBXGroup; children = (A50000000000000000000001 /* Infinity */, A50000000000000000000002 /* InfinityWidget */, A50000000000000000000003 /* InfinityTests */, A80000000000000000000002 /* Config */, A80000000000000000000003 /* Products */, ); sourceTree = "<group>"; };
-		A80000000000000000000002 /* Config */ = {isa = PBXGroup; children = (A20000000000000000000004 /* Shared.xcconfig */, ); path = Config; sourceTree = "<group>"; };
+		A80000000000000000000002 /* Config */ = {isa = PBXGroup; children = (A20000000000000000000004 /* Shared.xcconfig */, A20000000000000000000005 /* DesktopPetState.swift */, A20000000000000000000006 /* DesktopPetCatView.swift */, A20000000000000000000007 /* DesktopPetPixelSprite.swift */, ); path = Config; sourceTree = "<group>"; };
 		A80000000000000000000003 /* Products */ = {isa = PBXGroup; children = (A20000000000000000000001 /* Infinity.app */, A20000000000000000000002 /* InfinityWidgetExtension.appex */, A20000000000000000000003 /* InfinityTests.xctest */, ); name = Products; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
@@ -66,7 +72,7 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		A90000000000000000000001 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-		A90000000000000000000002 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A90000000000000000000002 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000002 /* DesktopPetState.swift in Sources */, A10000000000000000000003 /* DesktopPetCatView.swift in Sources */, A10000000000000000000004 /* DesktopPetPixelSprite.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
 		A90000000000000000000003 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXSourcesBuildPhase section */
 
