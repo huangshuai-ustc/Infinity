@@ -1,102 +1,523 @@
 // !$*UTF8*$!
 {
 	archiveVersion = 1;
-	classes = {};
-	objectVersion = 77;
+	classes = {
+	};
+	objectVersion = 71;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A10000000000000000000001 /* InfinityWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* InfinityWidgetExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A10000000000000000000002 /* DesktopPetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* DesktopPetState.swift */; };
-		A10000000000000000000003 /* DesktopPetCatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* DesktopPetCatView.swift */; };
-		A10000000000000000000004 /* DesktopPetPixelSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* DesktopPetPixelSprite.swift */; };
+		A10000000000000000000002 /* Infinity/Features/DesktopPet/Domain/DesktopPetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* Infinity/Features/DesktopPet/Domain/DesktopPetState.swift */; };
+		A10000000000000000000003 /* Infinity/Features/DesktopPet/Presentation/DesktopPetCatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* Infinity/Features/DesktopPet/Presentation/DesktopPetCatView.swift */; };
+		A10000000000000000000004 /* Infinity/Features/DesktopPet/Presentation/DesktopPetPixelSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* Infinity/Features/DesktopPet/Presentation/DesktopPetPixelSprite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A30000000000000000000001 /* PBXContainerItemProxy */ = {isa = PBXContainerItemProxy; containerPortal = A00000000000000000000001 /* Project object */; proxyType = 1; remoteGlobalIDString = A60000000000000000000002; remoteInfo = InfinityWidgetExtension; };
-		A30000000000000000000002 /* PBXContainerItemProxy */ = {isa = PBXContainerItemProxy; containerPortal = A00000000000000000000001 /* Project object */; proxyType = 1; remoteGlobalIDString = A60000000000000000000001; remoteInfo = Infinity; };
+		A30000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A60000000000000000000002;
+			remoteInfo = InfinityWidgetExtension;
+		};
+		A30000000000000000000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A60000000000000000000001;
+			remoteInfo = Infinity;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A40000000000000000000001 /* Embed App Extensions */ = {isa = PBXCopyFilesBuildPhase; buildActionMask = 2147483647; dstPath = ""; dstSubfolderSpec = 13; files = (A10000000000000000000001 /* InfinityWidgetExtension.appex in Embed App Extensions */, ); name = "Embed App Extensions"; runOnlyForDeploymentPostprocessing = 0; };
+		A40000000000000000000001 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A10000000000000000000001 /* InfinityWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A20000000000000000000001 /* Infinity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infinity.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A20000000000000000000002 /* InfinityWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = wrapper.app-extension; includeInIndex = 0; path = InfinityWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000000000000000000002 /* InfinityWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = InfinityWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20000000000000000000003 /* InfinityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfinityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20000000000000000000004 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
-		A20000000000000000000005 /* DesktopPetState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infinity/Features/DesktopPet/Domain/DesktopPetState.swift; sourceTree = SOURCE_ROOT; };
-		A20000000000000000000006 /* DesktopPetCatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infinity/Features/DesktopPet/Presentation/DesktopPetCatView.swift; sourceTree = SOURCE_ROOT; };
-		A20000000000000000000007 /* DesktopPetPixelSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infinity/Features/DesktopPet/Presentation/DesktopPetPixelSprite.swift; sourceTree = SOURCE_ROOT; };
+		A20000000000000000000005 /* Infinity/Features/DesktopPet/Domain/DesktopPetState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infinity/Features/DesktopPet/Domain/DesktopPetState.swift; sourceTree = SOURCE_ROOT; };
+		A20000000000000000000006 /* Infinity/Features/DesktopPet/Presentation/DesktopPetCatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infinity/Features/DesktopPet/Presentation/DesktopPetCatView.swift; sourceTree = SOURCE_ROOT; };
+		A20000000000000000000007 /* Infinity/Features/DesktopPet/Presentation/DesktopPetPixelSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infinity/Features/DesktopPet/Presentation/DesktopPetPixelSprite.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A51000000000000000000001 /* App exclusions */ = {isa = PBXFileSystemSynchronizedBuildFileExceptionSet; membershipExceptions = (Info.plist, ); target = A60000000000000000000001 /* Infinity */; };
-		A51000000000000000000002 /* Widget exclusions */ = {isa = PBXFileSystemSynchronizedBuildFileExceptionSet; membershipExceptions = (Info.plist, ); target = A60000000000000000000002 /* InfinityWidgetExtension */; };
+		A51000000000000000000001 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A60000000000000000000001 /* Infinity */;
+		};
+		A51000000000000000000002 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A60000000000000000000002 /* InfinityWidgetExtension */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A50000000000000000000001 /* Infinity */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A51000000000000000000001, ); path = Infinity; sourceTree = "<group>"; };
-		A50000000000000000000002 /* InfinityWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A51000000000000000000002, ); path = InfinityWidget; sourceTree = "<group>"; };
-		A50000000000000000000003 /* InfinityTests */ = {isa = PBXFileSystemSynchronizedRootGroup; path = InfinityTests; sourceTree = "<group>"; };
+		A50000000000000000000001 /* Infinity */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A51000000000000000000001 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Infinity; sourceTree = "<group>"; };
+		A50000000000000000000002 /* InfinityWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A51000000000000000000002 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = InfinityWidget; sourceTree = "<group>"; };
+		A50000000000000000000003 /* InfinityTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = InfinityTests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A70000000000000000000001 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-		A70000000000000000000002 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-		A70000000000000000000003 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A70000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70000000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A80000000000000000000001 = {isa = PBXGroup; children = (A50000000000000000000001 /* Infinity */, A50000000000000000000002 /* InfinityWidget */, A50000000000000000000003 /* InfinityTests */, A80000000000000000000002 /* Config */, A80000000000000000000003 /* Products */, ); sourceTree = "<group>"; };
-		A80000000000000000000002 /* Config */ = {isa = PBXGroup; children = (A20000000000000000000004 /* Shared.xcconfig */, A20000000000000000000005 /* DesktopPetState.swift */, A20000000000000000000006 /* DesktopPetCatView.swift */, A20000000000000000000007 /* DesktopPetPixelSprite.swift */, ); path = Config; sourceTree = "<group>"; };
-		A80000000000000000000003 /* Products */ = {isa = PBXGroup; children = (A20000000000000000000001 /* Infinity.app */, A20000000000000000000002 /* InfinityWidgetExtension.appex */, A20000000000000000000003 /* InfinityTests.xctest */, ); name = Products; sourceTree = "<group>"; };
+		A80000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A50000000000000000000001 /* Infinity */,
+				A50000000000000000000002 /* InfinityWidget */,
+				A50000000000000000000003 /* InfinityTests */,
+				A80000000000000000000002 /* Config */,
+				A80000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A80000000000000000000002 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000004 /* Shared.xcconfig */,
+				A20000000000000000000005 /* Infinity/Features/DesktopPet/Domain/DesktopPetState.swift */,
+				A20000000000000000000006 /* Infinity/Features/DesktopPet/Presentation/DesktopPetCatView.swift */,
+				A20000000000000000000007 /* Infinity/Features/DesktopPet/Presentation/DesktopPetPixelSprite.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A80000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000001 /* Infinity.app */,
+				A20000000000000000000002 /* InfinityWidgetExtension.appex */,
+				A20000000000000000000003 /* InfinityTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A60000000000000000000001 /* Infinity */ = {isa = PBXNativeTarget; buildConfigurationList = AB00000000000000000000001; buildPhases = (A90000000000000000000001, A70000000000000000000001, AA00000000000000000000001, A40000000000000000000001, ); buildRules = (); dependencies = (A30000000000000000000003, ); fileSystemSynchronizedGroups = (A50000000000000000000001, ); name = Infinity; packageProductDependencies = (); productName = Infinity; productReference = A20000000000000000000001; productType = "com.apple.product-type.application"; };
-		A60000000000000000000002 /* InfinityWidgetExtension */ = {isa = PBXNativeTarget; buildConfigurationList = AB00000000000000000000002; buildPhases = (A90000000000000000000002, A70000000000000000000002, AA00000000000000000000002, ); buildRules = (); dependencies = (); fileSystemSynchronizedGroups = (A50000000000000000000002, ); name = InfinityWidgetExtension; packageProductDependencies = (); productName = InfinityWidgetExtension; productReference = A20000000000000000000002; productType = "com.apple.product-type.app-extension"; };
-		A60000000000000000000003 /* InfinityTests */ = {isa = PBXNativeTarget; buildConfigurationList = AB00000000000000000000003; buildPhases = (A90000000000000000000003, A70000000000000000000003, AA00000000000000000000003, ); buildRules = (); dependencies = (A30000000000000000000004, ); fileSystemSynchronizedGroups = (A50000000000000000000003, ); name = InfinityTests; packageProductDependencies = (); productName = InfinityTests; productReference = A20000000000000000000003; productType = "com.apple.product-type.bundle.unit-test"; };
+		A60000000000000000000001 /* Infinity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB00000000000000000000001 /* Build configuration list for PBXNativeTarget "Infinity" */;
+			buildPhases = (
+				A90000000000000000000001 /* Sources */,
+				A70000000000000000000001 /* Frameworks */,
+				AA00000000000000000000001 /* Resources */,
+				A40000000000000000000001 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A30000000000000000000003 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A50000000000000000000001 /* Infinity */,
+			);
+			name = Infinity;
+			packageProductDependencies = (
+			);
+			productName = Infinity;
+			productReference = A20000000000000000000001 /* Infinity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A60000000000000000000002 /* InfinityWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB00000000000000000000002 /* Build configuration list for PBXNativeTarget "InfinityWidgetExtension" */;
+			buildPhases = (
+				A90000000000000000000002 /* Sources */,
+				A70000000000000000000002 /* Frameworks */,
+				AA00000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A50000000000000000000002 /* InfinityWidget */,
+			);
+			name = InfinityWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = InfinityWidgetExtension;
+			productReference = A20000000000000000000002 /* InfinityWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A60000000000000000000003 /* InfinityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB00000000000000000000003 /* Build configuration list for PBXNativeTarget "InfinityTests" */;
+			buildPhases = (
+				A90000000000000000000003 /* Sources */,
+				A70000000000000000000003 /* Frameworks */,
+				AA00000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A30000000000000000000004 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A50000000000000000000003 /* InfinityTests */,
+			);
+			name = InfinityTests;
+			packageProductDependencies = (
+			);
+			productName = InfinityTests;
+			productReference = A20000000000000000000003 /* InfinityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A00000000000000000000001 /* Project object */ = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 2700; LastUpgradeCheck = 2700; TargetAttributes = {A60000000000000000000001 = {CreatedOnToolsVersion = 27.1; }; A60000000000000000000002 = {CreatedOnToolsVersion = 27.1; }; A60000000000000000000003 = {CreatedOnToolsVersion = 27.1; TestTargetID = A60000000000000000000001; }; }; }; buildConfigurationList = AB00000000000000000000000; compatibilityVersion = "Xcode 16.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base, ); mainGroup = A80000000000000000000001; productRefGroup = A80000000000000000000003; projectDirPath = ""; projectRoot = ""; targets = (A60000000000000000000001, A60000000000000000000002, A60000000000000000000003, ); };
+		A00000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					A60000000000000000000001 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					A60000000000000000000002 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					A60000000000000000000003 = {
+						CreatedOnToolsVersion = 27.1;
+						TestTargetID = A60000000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = AB00000000000000000000000 /* Build configuration list for PBXProject "Infinity" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A80000000000000000000001;
+			productRefGroup = A80000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A60000000000000000000001 /* Infinity */,
+				A60000000000000000000002 /* InfinityWidgetExtension */,
+				A60000000000000000000003 /* InfinityTests */,
+			);
+		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AA00000000000000000000001 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-		AA00000000000000000000002 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-		AA00000000000000000000003 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		AA00000000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA00000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA00000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A90000000000000000000001 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-		A90000000000000000000002 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000002 /* DesktopPetState.swift in Sources */, A10000000000000000000003 /* DesktopPetCatView.swift in Sources */, A10000000000000000000004 /* DesktopPetPixelSprite.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
-		A90000000000000000000003 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A90000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000002 /* Infinity/Features/DesktopPet/Domain/DesktopPetState.swift in Sources */,
+				A10000000000000000000003 /* Infinity/Features/DesktopPet/Presentation/DesktopPetCatView.swift in Sources */,
+				A10000000000000000000004 /* Infinity/Features/DesktopPet/Presentation/DesktopPetPixelSprite.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90000000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A30000000000000000000003 = {isa = PBXTargetDependency; platformFilter = ios; target = A60000000000000000000002 /* InfinityWidgetExtension */; targetProxy = A30000000000000000000001 /* PBXContainerItemProxy */; };
-		A30000000000000000000004 = {isa = PBXTargetDependency; target = A60000000000000000000001 /* Infinity */; targetProxy = A30000000000000000000002 /* PBXContainerItemProxy */; };
+		A30000000000000000000003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = A60000000000000000000002 /* InfinityWidgetExtension */;
+			targetProxy = A30000000000000000000001 /* PBXContainerItemProxy */;
+		};
+		A30000000000000000000004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A60000000000000000000001 /* Infinity */;
+			targetProxy = A30000000000000000000002 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		AC00000000000000000000001 = {isa = XCBuildConfiguration; baseConfigurationReference = A20000000000000000000004; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_TESTABILITY = YES; GCC_C_LANGUAGE_STANDARD = gnu17; GCC_OPTIMIZATION_LEVEL = 0; ONLY_ACTIVE_ARCH = YES; SDKROOT = auto; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)"; }; name = Debug; };
-		AC00000000000000000000002 = {isa = XCBuildConfiguration; baseConfigurationReference = A20000000000000000000004; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_NS_ASSERTIONS = NO; GCC_C_LANGUAGE_STANDARD = gnu17; SDKROOT = auto; SWIFT_COMPILATION_MODE = wholemodule; VALIDATE_PRODUCT = YES; }; name = Release; };
-		AC00000000000000000000011 = {isa = XCBuildConfiguration; baseConfigurationReference = A20000000000000000000004; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_ENTITLEMENTS = Config/Infinity.entitlements; CODE_SIGN_STYLE = Automatic; DEVELOPMENT_TEAM = ""; ENABLE_APP_SANDBOX = YES; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Infinity/Info.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_IDENTIFIER)"; PRODUCT_NAME = Infinity; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx"; SUPPORTS_MACCATALYST = NO; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
-		AC00000000000000000000012 = {isa = XCBuildConfiguration; baseConfigurationReference = A20000000000000000000004; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_ENTITLEMENTS = Config/Infinity.entitlements; CODE_SIGN_STYLE = Automatic; DEVELOPMENT_TEAM = ""; ENABLE_APP_SANDBOX = YES; ENABLE_HARDENED_RUNTIME = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Infinity/Info.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_IDENTIFIER)"; PRODUCT_NAME = Infinity; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx"; SUPPORTS_MACCATALYST = NO; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
-		AC00000000000000000000021 = {isa = XCBuildConfiguration; baseConfigurationReference = A20000000000000000000004; buildSettings = {APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_ENTITLEMENTS = Config/InfinityWidget.entitlements; CODE_SIGN_STYLE = Automatic; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = InfinityWidget/Info.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../../Frameworks"; PRODUCT_BUNDLE_IDENTIFIER = "$(WIDGET_BUNDLE_IDENTIFIER)"; PRODUCT_NAME = "$(TARGET_NAME)"; SKIP_INSTALL = YES; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
-		AC00000000000000000000022 = {isa = XCBuildConfiguration; baseConfigurationReference = A20000000000000000000004; buildSettings = {APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_ENTITLEMENTS = Config/InfinityWidget.entitlements; CODE_SIGN_STYLE = Automatic; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = InfinityWidget/Info.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../../Frameworks"; PRODUCT_BUNDLE_IDENTIFIER = "$(WIDGET_BUNDLE_IDENTIFIER)"; PRODUCT_NAME = "$(TARGET_NAME)"; SKIP_INSTALL = YES; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
-		AC00000000000000000000031 = {isa = XCBuildConfiguration; baseConfigurationReference = A20000000000000000000004; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = com.example.infinity.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx"; TARGETED_DEVICE_FAMILY = "1,2"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infinity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Infinity"; }; name = Debug; };
-		AC00000000000000000000032 = {isa = XCBuildConfiguration; baseConfigurationReference = A20000000000000000000004; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = com.example.infinity.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx"; TARGETED_DEVICE_FAMILY = "1,2"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infinity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Infinity"; }; name = Release; };
+		AC00000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20000000000000000000004 /* Shared.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = auto;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+			};
+			name = Debug;
+		};
+		AC00000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20000000000000000000004 /* Shared.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				SDKROOT = auto;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC00000000000000000000011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20000000000000000000004 /* Shared.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Config/Infinity.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Y8DN35HLK;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Infinity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_IDENTIFIER)";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.huangshuai.infinity;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.huangshuai.infinity;
+				PRODUCT_NAME = Infinity;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC00000000000000000000012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20000000000000000000004 /* Shared.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Config/Infinity.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Y8DN35HLK;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Infinity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_IDENTIFIER)";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.huangshuai.infinity;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.huangshuai.infinity;
+				PRODUCT_NAME = Infinity;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC00000000000000000000021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20000000000000000000004 /* Shared.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Config/InfinityWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Y8DN35HLK;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = InfinityWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(WIDGET_BUNDLE_IDENTIFIER)";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.huangshuai.infinity.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC00000000000000000000022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20000000000000000000004 /* Shared.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Config/InfinityWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Y8DN35HLK;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = InfinityWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(WIDGET_BUNDLE_IDENTIFIER)";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.huangshuai.infinity.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC00000000000000000000031 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20000000000000000000004 /* Shared.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Y8DN35HLK;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangshuai.infinity.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infinity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Infinity";
+			};
+			name = Debug;
+		};
+		AC00000000000000000000032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20000000000000000000004 /* Shared.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Y8DN35HLK;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangshuai.infinity.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infinity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Infinity";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB00000000000000000000000 = {isa = XCConfigurationList; buildConfigurations = (AC00000000000000000000001, AC00000000000000000000002, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-		AB00000000000000000000001 = {isa = XCConfigurationList; buildConfigurations = (AC00000000000000000000011, AC00000000000000000000012, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-		AB00000000000000000000002 = {isa = XCConfigurationList; buildConfigurations = (AC00000000000000000000021, AC00000000000000000000022, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-		AB00000000000000000000003 = {isa = XCConfigurationList; buildConfigurations = (AC00000000000000000000031, AC00000000000000000000032, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		AB00000000000000000000000 /* Build configuration list for PBXProject "Infinity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC00000000000000000000001 /* Debug */,
+				AC00000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB00000000000000000000001 /* Build configuration list for PBXNativeTarget "Infinity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC00000000000000000000011 /* Debug */,
+				AC00000000000000000000012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB00000000000000000000002 /* Build configuration list for PBXNativeTarget "InfinityWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC00000000000000000000021 /* Debug */,
+				AC00000000000000000000022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB00000000000000000000003 /* Build configuration list for PBXNativeTarget "InfinityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC00000000000000000000031 /* Debug */,
+				AC00000000000000000000032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 	};
 	rootObject = A00000000000000000000001 /* Project object */;
