@@ -1,6 +1,6 @@
 # Infinity
 
-`Infinity` 是一个面向 iPhone、iPad 和 Mac 的原生 SwiftUI 桌面宠物 App。
+`Infinity` 是一个面向 iPhone、iPad 和 Mac 的原生 SwiftUI 桌面宠物 App，安装后的显示名称为 `∞`。
 
 - Display Name：`∞`
 - Product / App Store Name：`Infinity`
@@ -30,5 +30,28 @@ xcodebuild test -project Infinity.xcodeproj -scheme Infinity \
   -destination 'platform=macOS' \
   -derivedDataPath /tmp/infinity-macos-derived CODE_SIGNING_ALLOWED=NO
 ```
+
+也可以直接在 Xcode 中打开 `Infinity.xcodeproj`，选择 `Infinity` scheme 后运行。
+
+### iOS Simulator
+
+项目已在 Xcode 27.1 的 iPhone 17 Simulator 上验证通过，能够完成编译、安装和启动。使用 MobileBuildMCP 时可以运行：
+
+```sh
+mobilebuildmcp simulator build-and-run \
+  --project-path Infinity.xcodeproj \
+  --scheme Infinity \
+  --simulator-name 'iPhone 17'
+```
+
+### 真机签名
+
+真机运行前，在 Xcode 的 App 和 `InfinityWidgetExtension` target 中选择同一个 Apple Developer Team，并确认以下标识符均已注册或允许自动签名：
+
+- App：`com.example.infinity`
+- Widget：`com.example.infinity.widget`
+- App Group：`group.com.example.infinity`
+
+真机安装还要求设备运行 iOS / iPadOS 26.0 或更高版本，并在设备上信任开发者证书。项目不会提交或包含个人签名证书、Provisioning Profile、Xcode 用户数据或构建产物。
 
 真机或归档前，在 Xcode 中为 App 和 Widget 选择同一开发团队，并在开发者账户中配置 `group.com.example.infinity` App Group。

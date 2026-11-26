@@ -1,7 +1,24 @@
 .DS_Store
 DerivedData/
 build/
+*.build/
+*.xcresult
+*.ipa
+*.app
+*.dSYM
 *.xcuserstate
 xcuserdata/
 .superpowers/
 Config/Signing.local.xcconfig
+
+# Local tooling and editor state
+.mobilebuildmcp/
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local signing and provisioning material
+*.mobileprovision
+*.provisionprofile
+*.p12
