@@ -1,6 +1,6 @@
 # Infinity
 
-`Infinity` 是一个面向 iPhone、iPad 和 Mac 的原生 SwiftUI 桌面宠物 App，安装后的显示名称为 `∞`。
+`Infinity` 是一个面向 iPhone、iPad 和 Mac 的原生 SwiftUI 提醒事项 App，安装后的显示名称为 `∞`。App 内保留一只可拖动的悬浮猫咪，提供轻触互动和自动动作。
 
 - Display Name：`∞`
 - Product / App Store Name：`Infinity`
@@ -9,15 +9,14 @@
 
 ## 功能
 
-- 会随时间变化饱腹与心情的「脏脏橘」
-- 喂食、摸摸、睡眠、饥饿和开心状态
-- 像素与 RealityKit 3D 两种展示
-- iPhone / iPad App 内可拖动悬浮宠物
-- macOS 跨桌面浮窗
-- 可直接喂食和摸摸的交互式 Widget
+- 创建带时间和内容的提醒事项
+- 本地通知权限申请与定时提醒
+- 提醒完成勾选和左滑删除
+- iPhone / iPad App 内可拖动悬浮猫咪
+- 点击触感反馈和自动动画动作
 - 原创无限符号 App Icon
 
-宠物状态只保存在本机 `UserDefaults`；iOS App 与 Widget 通过 `group.com.example.infinity` App Group 共享状态，不参与 CloudKit 或业务备份。
+提醒数据只保存在本机 `UserDefaults`，通知使用系统本地通知，不参与 CloudKit 或业务备份。
 
 ## 构建
 
