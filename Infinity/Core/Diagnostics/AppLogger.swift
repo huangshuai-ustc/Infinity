@@ -15,3 +15,23 @@ enum AppLogger {
         logger.error("\(message, privacy: .public)")
     }
 }
+
+enum DiagnosticCategory {
+    case lifecycle
+}
+
+enum DiagnosticLevel {
+    case info
+    case error
+}
+
+struct DiagnosticLogger {
+    static let shared = DiagnosticLogger()
+
+    func log(_ category: DiagnosticCategory, _ message: String, level: DiagnosticLevel = .info) {
+        switch level {
+        case .info: AppLogger.info(message)
+        case .error: AppLogger.error(message)
+        }
+    }
+}
