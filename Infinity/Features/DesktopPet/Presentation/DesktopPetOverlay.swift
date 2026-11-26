@@ -13,8 +13,8 @@ final class DesktopPetOverlayController: ObservableObject {
     static let shownKey = "desktop-pet-overlay-shown"
     static let positionKey = "desktop-pet-overlay-position"
     /// Wider than tall, so the 3D cat fits both lying down and standing up.
-    static let petSize = CGSize(width: 128, height: 112)
-    static let actionBarSize = CGSize(width: 156, height: 44)
+    static let petSize = CGSize(width: 192, height: 168)
+    static let actionBarSize = CGSize(width: 234, height: 66)
     private static let margin: CGFloat = 6
 
     /// The user's choice; the cat also needs the module to be visible.
