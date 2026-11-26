@@ -4,6 +4,11 @@ import SwiftUI
 /// and where else the cat can be shown.
 struct DesktopPetView: View {
     @ObservedObject private var store: DesktopPetStore
+#if os(macOS)
+    @ObservedObject private var desktopWindow = DesktopPetDesktopWindowController.shared
+#else
+    @ObservedObject private var overlay = DesktopPetOverlayController.shared
+#endif
     @Environment(\.scenePhase) private var scenePhase
     @AppStorage(DesktopPetView.showsModelKey) private var showsModel = true
 
@@ -26,7 +31,14 @@ struct DesktopPetView: View {
         }
         .appNavigationTitle("桌面宠物")
         .diagnosticScreen("桌面宠物")
-        .onAppear { store.reload() }
+        .onAppear {
+            store.reload()
+#if os(macOS)
+            desktopWindow.restoreIfNeeded()
+#else
+            overlay.restoreIfNeeded()
+#endif
+        }
         .onChange(of: scenePhase) { _, phase in
             if phase == .active { store.reload() }
         }
@@ -83,8 +95,40 @@ struct DesktopPetView: View {
                 ) { store.pet() }
             }
 
+            companionCard
             tipsCard
         }
+    }
+
+    private var companionCard: some View {
+        VStack(alignment: .leading, spacing: 8) {
+#if os(macOS)
+            Toggle(isOn: Binding(
+                get: { desktopWindow.isShown },
+                set: { desktopWindow.setShown($0) }
+            )) {
+                Label("放在桌面上", systemImage: "macwindow")
+                    .appFont(.headline)
+            }
+            Text("小猫会浮在所有窗口上方，可以拖动；单击摸摸，右键可以喂食或收起。")
+                .appFont(.footnote)
+                .foregroundStyle(.secondary)
+#else
+            Toggle(isOn: Binding(
+                get: { overlay.isEnabled },
+                set: { overlay.setShown($0) }
+            )) {
+                Label("在 App 里悬浮显示", systemImage: "pip")
+                    .appFont(.headline)
+            }
+            Text("小猫会浮在所有页面上方，可以拖动；轻点摸摸，长按喂食或收起。")
+                .appFont(.footnote)
+                .foregroundStyle(.secondary)
+#endif
+        }
+        .tint(.orange)
+        .padding(16)
+        .background(.quaternary.opacity(0.4), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
     }
 
     private var tipsCard: some View {
